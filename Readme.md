@@ -23,12 +23,12 @@ Developers are often tasked with creating interfaces that make it easy for non-d
 
 ### <a name="Installation"></a>Installation
 
-- inquirer
-- mySQL
-- console.table
-- Javascript
-- Node.js
-
+1. install npm init -y to create a new .json file
+2. npm i
+3. make sure to run .sql file in mySQL workbench before running index.js so that tables are able to render correctly
+4. run node index.js
+5. make sure index.js is connected to SQL before continuing
+6. run through prompts as required 
 
 
 

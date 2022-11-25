@@ -5,22 +5,17 @@ require("console.table");
 
 init();
 
-//* Display logo text, load main prompts
+//* Display main prompts
 function init() {
-  const logoText = logo({ name: "Employee Manager" }).render();
-
-  console.log(logoText);
-
   loadMainPrompts();
 }
 
-//* prompt the user with a menu that gives choices on what they would like to do.
 function loadMainPrompts() {
-    prompt([
+  prompt([
       {
-        type: "list",
         name: "choice",
         message: "What would you like to do?",
+        type: "list",
         choices: [
           {
             name: "View All Employees",
@@ -84,7 +79,7 @@ function loadMainPrompts() {
           }
         ]
       }
-    ]).then(res => {
+         ]).then(res => {
       let choice = res.choice;
       //* Call functions depending on what selected from the users
       switch (choice) {
